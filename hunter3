@@ -1,0 +1,24 @@
+import java.io.*;
+import java.util.*;
+public class hunter3
+{
+    public static void main(String args[])
+    {
+    Scanner sc=new Scanner(System.in);
+    String s=sc.nextLine();
+    String res[]=(s.split(" "));
+    String revword="";
+    String revstring="";
+    for(int i=0;i<res.length;i++)
+    {
+     String re=res[i];
+     for(int k=re.length()-1;k>=0;k--)
+     {
+    revword=revword+String.valueOf(re.charAt(k));     
+     }
+     revstring=revstring+revword+" ";
+     revword="";
+    }
+    System.out.println(revstring);
+    }
+}
