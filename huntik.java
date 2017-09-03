@@ -1,6 +1,6 @@
 import java.io.*;
 import java.util.*;
-public class huntt
+public class hunttik
 {
     public static void main(String args[])
     {
